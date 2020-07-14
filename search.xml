@@ -38,6 +38,33 @@ aside    【可选】显示侧边栏 （默认 true）
 aplayer    【可选】在需要的页面加载aplayer的js和css，请参考文章下面的 配置音樂
 highlight_shrink    【可选】配置代码框是否展开（true/false）（默认为设置中highlight_shrink的配置）
 cover   文章外部缩略图
- -->]]></content>
+ -->
+
+
+<h1 id="mongoose"><a href="#mongoose" class="headerlink" title="mongoose"></a>mongoose</h1><h6 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h6><ul>
+<li><p>schema</p>
+<p>  约束字段 / 列数据</p>
+</li>
+<li><p>model 模型</p>
+<p>  对应 集合 后期用它来实现数据增删改查</p>
+</li>
+</ul>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ol>
+<li>安装<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">abc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">"这是一个弹窗"</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>调试</li>
+</ol>
+<hr>
+<blockquote>
+<p>英文网： <a href="http://mongoosejs.com" target="_blank" rel="noopener">http://mongoosejs.com</a></p>
+</blockquote>
+<blockquote>
+<p>中文网： <a href="http://mongoosejs.net/" target="_blank" rel="noopener">http://mongoosejs.net/</a></p>
+</blockquote>
+<blockquote>
+<p>作用：用来约束 MongoDB 文档数据（哪些字段必须，哪些字段可选的）</p>
+</blockquote>
+<h1 id="model"><a href="#model" class="headerlink" title="model"></a>model</h1><p>一个模型对应一个集合。后面通过模型管理集合中的数据。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>基本模型</p>
+]]></content>
   </entry>
 </search>
