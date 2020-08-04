@@ -54,7 +54,6 @@ cover   文章外部缩略图
 <li>查看已经提交的内容（打印日志）</li>
 </ul>
 </li>
-<li></li>
 </ul>
 <h1 id="git文件的三种状态"><a href="#git文件的三种状态" class="headerlink" title="git文件的三种状态"></a>git文件的三种状态</h1><ul>
 <li>已修改<ul>
@@ -66,13 +65,13 @@ cover   文章外部缩略图
 </ul>
 </li>
 <li>已提交<ul>
-<li>提交到本地仓库的文件<blockquote>
+<li>提交到本地仓库的文件</li>
+</ul>
+</li>
+</ul>
+<blockquote>
 <p>未追踪状态：Untracked 由于未进入git，不被git管理，所以不属于三种状态里的任何一种。</p>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <h1 id="git的三个工作区域"><a href="#git的三个工作区域" class="headerlink" title="git的三个工作区域"></a>git的三个工作区域</h1><ul>
 <li>工作目录<ul>
 <li>已修改(对应修改的文件)</li>
@@ -97,13 +96,13 @@ cover   文章外部缩略图
 </ul>
 </li>
 <li>git仓库<ul>
-<li>找到暂存区的文件，提交更新<blockquote>
+<li>找到暂存区的文件，提交更新</li>
+</ul>
+</li>
+</ul>
+<blockquote>
 <p>工作目录中创建或修改文件后。通过git add提交到暂存区，最后通过git commit提交到git仓库。</p>
 </blockquote>
-</li>
-</ul>
-</li>
-</ul>
 <blockquote>
 <p>ps：git仓库读取文件是从暂存区读取，因此要先git add到暂存区！</p>
 </blockquote>
@@ -120,11 +119,11 @@ cover   文章外部缩略图
 <li>合并提交和描述，一部完成操作<h3 id="每次都要输入add命令好麻烦？"><a href="#每次都要输入add命令好麻烦？" class="headerlink" title="每次都要输入add命令好麻烦？"></a>每次都要输入add命令好麻烦？</h3></li>
 </ul>
 </li>
-<li>git commit -a -m ‘描述’<br>  +从工作目录提交到暂存区后，再直接从暂存区提交到git仓库<blockquote>
+<li>git commit -a -m ‘描述’<br>  +从工作目录提交到暂存区后，再直接从暂存区提交到git仓库</li>
+</ul>
+<blockquote>
 <p> git commit -a -m ‘描述’无法操作未被追踪的文件。需要先git add 。添加到暂存区</p>
 </blockquote>
-</li>
-</ul>
 <h2 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h2><ol>
 <li>中文乱码</li>
 </ol>
