@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World1111111</title>
-    <url>/2020/07/06/hello-world/</url>
-    <content><![CDATA[<p>作者: Jerry<br>連結: <a href="https://demo.jerryc.me/posts/dc584b87/#Front-matter" target="_blank" rel="noopener">https://demo.jerryc.me/posts/dc584b87/#Front-matter</a><br>來源: Butterfly<br>著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。</p>
-<hr>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>新建文章测试</title>
-    <url>/2020/07/10/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/</url>
+    <title>git命令</title>
+    <url>/2020/08/05/git%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<!-- 写法    解释
 title    【必需】页面标题
 date    【必需】页面创建日期
@@ -41,30 +21,201 @@ cover   文章外部缩略图
  -->
 
 
-<h1 id="mongoose"><a href="#mongoose" class="headerlink" title="mongoose"></a>mongoose</h1><h6 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h6><ul>
-<li><p>schema</p>
-<p>  约束字段 / 列数据</p>
+<h1 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h1><ul>
+<li>git init <ul>
+<li>初始化创建仓库</li>
+</ul>
 </li>
-<li><p>model 模型</p>
-<p>  对应 集合 后期用它来实现数据增删改查</p>
+<li>git status <ul>
+<li>查看当前仓库目录所在位置、查看文件状态</li>
+</ul>
+</li>
+<li>git add 文件名 <ul>
+<li>给文件添加git管理权限、追踪文件</li>
+</ul>
+</li>
+<li>git commit <ul>
+<li>提交到仓库记录</li>
+</ul>
+</li>
+<li>git config –global user.email “<a href="mailto:123456@qq.com">123456@qq.com</a>“<ul>
+<li>设置全局用户名</li>
+</ul>
+</li>
+<li>git config –global user.name “Youer Name”<ul>
+<li>设置全局密码</li>
+</ul>
+</li>
+<li>git config –global -l<ul>
+<li>验证用户配置信息</li>
+</ul>
+</li>
+<li>git log<ul>
+<li>查看已经提交的内容（打印日志）</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h1 id="git文件的三种状态"><a href="#git文件的三种状态" class="headerlink" title="git文件的三种状态"></a>git文件的三种状态</h1><ul>
+<li>已修改<ul>
+<li>被修改的文件</li>
+</ul>
+</li>
+<li>已暂存<ul>
+<li>等待被提交的文件</li>
+</ul>
+</li>
+<li>已提交<ul>
+<li>提交到本地仓库的文件<blockquote>
+<p>未追踪状态：Untracked 由于未进入git，不被git管理，所以不属于三种状态里的任何一种。</p>
+</blockquote>
 </li>
 </ul>
-<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><ol>
-<li>安装<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">abc</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">"这是一个弹窗"</span>); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>调试</li>
+</li>
+</ul>
+<h1 id="git的三个工作区域"><a href="#git的三个工作区域" class="headerlink" title="git的三个工作区域"></a>git的三个工作区域</h1><ul>
+<li>工作目录<ul>
+<li>已修改(对应修改的文件)</li>
+</ul>
+</li>
+<li>暂存区域<ul>
+<li>已暂存(通过git add添加的文件)</li>
+</ul>
+</li>
+<li>git仓库<ul>
+<li>已提交(git仓库中的文件)</li>
+</ul>
+</li>
+</ul>
+<h1 id="git的工作流"><a href="#git的工作流" class="headerlink" title="git的工作流"></a>git的工作流</h1><ul>
+<li>工作目录<ul>
+<li>工作目录中修改或者创建文件</li>
+</ul>
+</li>
+<li>暂存区域<ul>
+<li>暂存文件</li>
+</ul>
+</li>
+<li>git仓库<ul>
+<li>找到暂存区的文件，提交更新<blockquote>
+<p>工作目录中创建或修改文件后。通过git add提交到暂存区，最后通过git commit提交到git仓库。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>ps：git仓库读取文件是从暂存区读取，因此要先git add到暂存区！</p>
+</blockquote>
+<h1 id="git入门命令扩展"><a href="#git入门命令扩展" class="headerlink" title="git入门命令扩展"></a>git入门命令扩展</h1><ul>
+<li>git add a.txt b.txt<ul>
+<li>同时添加多个文件到暂存区<h3 id="当你需要添加到暂存区的文件过多的时候："><a href="#当你需要添加到暂存区的文件过多的时候：" class="headerlink" title="当你需要添加到暂存区的文件过多的时候："></a>当你需要添加到暂存区的文件过多的时候：</h3></li>
+</ul>
+</li>
+<li>git add .<ul>
+<li>添加所有改动文件及未追踪的文件到暂存区<h3 id="每次进入vim模式需要输入描述很麻烦？"><a href="#每次进入vim模式需要输入描述很麻烦？" class="headerlink" title="每次进入vim模式需要输入描述很麻烦？"></a>每次进入vim模式需要输入描述很麻烦？</h3></li>
+</ul>
+</li>
+<li>git commit -m ‘描述’<ul>
+<li>合并提交和描述，一部完成操作<h3 id="每次都要输入add命令好麻烦？"><a href="#每次都要输入add命令好麻烦？" class="headerlink" title="每次都要输入add命令好麻烦？"></a>每次都要输入add命令好麻烦？</h3></li>
+</ul>
+</li>
+<li>git commit -a -m ‘描述’<br>  +从工作目录提交到暂存区后，再直接从暂存区提交到git仓库<blockquote>
+<p> git commit -a -m ‘描述’无法操作未被追踪的文件。需要先git add 。添加到暂存区</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="中文乱码"><a href="#中文乱码" class="headerlink" title="中文乱码"></a>中文乱码</h2><ol>
+<li>中文乱码</li>
 </ol>
+<ul>
+<li>git config -global core.quotepath false</li>
+</ul>
+<ol start="2">
+<li>编辑描述乱码<ul>
+<li>进入cmder编辑器setting</li>
+<li>找到environment</li>
+<li>添加：set LANG=zh-CN.UTF-8</li>
+</ul>
+</li>
+</ol>
+<h1 id="git入门操作第二步"><a href="#git入门操作第二步" class="headerlink" title="git入门操作第二步"></a>git入门操作第二步</h1><h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><ol>
+<li>命令行删除<ul>
+<li>git rm filename         <ul>
+<li>删除git区域中记录的文件，并且不保存在工作<br>目录中</li>
+<li>例：git rm a.txt</li>
+</ul>
+</li>
+<li>git rm -f(force) filename<ul>
+<li>强制删除</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>手动删除工作目录中的文件<ul>
+<li>git rm filename</li>
+</ul>
+</li>
+<li>删除git仓库中的，保留工作目录中的文件<ul>
+<li>git rm –cache filename</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>手动删除流文件，git仓库中会依然存在，删除后，文件依然处在被追中状态，需要使用git rm filename 取消对被删除文件的追踪</p>
+</blockquote>
+<blockquote>
+<p>修改过的文件，在删除的时候会启动git保护机制，会提示某个文件修改后未提交，编辑修改过的文件无法直接删除。如确定必须删除，可使用强制删除！</p>
+</blockquote>
 <hr>
+<h2 id="移动文件"><a href="#移动文件" class="headerlink" title="移动文件"></a>移动文件</h2><h3 id="移动文件的妙用"><a href="#移动文件的妙用" class="headerlink" title="移动文件的妙用"></a>移动文件的妙用</h3><ol>
+<li>重命名<ol>
+<li>直接在工作目录直接修改文件名称</li>
+<li>mv old_filename new_filename<ul>
+<li>移动文件操作后git会自动识别为这步操作为重命名</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>移动文件<ul>
+<li>git mv file_from file_to<ul>
+<li>例：git mv a.txt first/a.txt</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 <blockquote>
-<p>英文网： <a href="http://mongoosejs.com" target="_blank" rel="noopener">http://mongoosejs.com</a></p>
+<p>以上命令相当于一下三条<br/></p>
+<ol>
+<li>mv file_from file_to<br/></li>
+<li>git rm file_from<br/></li>
+<li>git add file_to</li>
+</ol>
 </blockquote>
 <blockquote>
-<p>中文网： <a href="http://mongoosejs.net/" target="_blank" rel="noopener">http://mongoosejs.net/</a></p>
+<p>重命名文件原理是：重命名后，先删除原文件，后重新建立重命名后的新文件，且原文件任然存在git仓库，需要git rm filename从git仓库中删除原文件<br/>重命名后的文件会处于未追踪状态，新文件需要重新追踪再提交。<br/><br>ps：重命名后的新文件处于未追踪状态<br/><br>移动文件的操作。相当于重命名文件</p>
 </blockquote>
-<blockquote>
-<p>作用：用来约束 MongoDB 文档数据（哪些字段必须，哪些字段可选的）</p>
-</blockquote>
-<h1 id="model"><a href="#model" class="headerlink" title="model"></a>model</h1><p>一个模型对应一个集合。后面通过模型管理集合中的数据。</p>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>基本模型</p>
+<h2 id="查看功能"><a href="#查看功能" class="headerlink" title="查看功能"></a>查看功能</h2>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World1111111</title>
+    <url>/2020/07/06/hello-world/</url>
+    <content><![CDATA[<p>作者: Jerry<br>連結: <a href="https://demo.jerryc.me/posts/dc584b87/#Front-matter" target="_blank" rel="noopener">https://demo.jerryc.me/posts/dc584b87/#Front-matter</a><br>來源: Butterfly<br>著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。</p>
+<hr>
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
