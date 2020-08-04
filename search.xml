@@ -55,6 +55,7 @@ cover   文章外部缩略图
 </ul>
 </li>
 </ul>
+<hr>
 <h1 id="git文件的三种状态"><a href="#git文件的三种状态" class="headerlink" title="git文件的三种状态"></a>git文件的三种状态</h1><ul>
 <li>已修改<ul>
 <li>被修改的文件</li>
@@ -72,6 +73,7 @@ cover   文章外部缩略图
 <blockquote>
 <p>未追踪状态：Untracked 由于未进入git，不被git管理，所以不属于三种状态里的任何一种。</p>
 </blockquote>
+<hr>
 <h1 id="git的三个工作区域"><a href="#git的三个工作区域" class="headerlink" title="git的三个工作区域"></a>git的三个工作区域</h1><ul>
 <li>工作目录<ul>
 <li>已修改(对应修改的文件)</li>
@@ -86,6 +88,7 @@ cover   文章外部缩略图
 </ul>
 </li>
 </ul>
+<hr>
 <h1 id="git的工作流"><a href="#git的工作流" class="headerlink" title="git的工作流"></a>git的工作流</h1><ul>
 <li>工作目录<ul>
 <li>工作目录中修改或者创建文件</li>
@@ -106,6 +109,7 @@ cover   文章外部缩略图
 <blockquote>
 <p>ps：git仓库读取文件是从暂存区读取，因此要先git add到暂存区！</p>
 </blockquote>
+<hr>
 <h1 id="git入门命令扩展"><a href="#git入门命令扩展" class="headerlink" title="git入门命令扩展"></a>git入门命令扩展</h1><ul>
 <li>git add a.txt b.txt<ul>
 <li>同时添加多个文件到暂存区<h3 id="当你需要添加到暂存区的文件过多的时候："><a href="#当你需要添加到暂存区的文件过多的时候：" class="headerlink" title="当你需要添加到暂存区的文件过多的时候："></a>当你需要添加到暂存区的文件过多的时候：</h3></li>
@@ -141,6 +145,7 @@ cover   文章外部缩略图
 </ul>
 </li>
 </ol>
+<hr>
 <h1 id="git入门操作第二步"><a href="#git入门操作第二步" class="headerlink" title="git入门操作第二步"></a>git入门操作第二步</h1><h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><ol>
 <li>命令行删除<ul>
 <li>git rm filename         <ul>
