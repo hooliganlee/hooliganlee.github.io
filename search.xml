@@ -119,7 +119,10 @@ cover   文章外部缩略图
 <li>合并提交和描述，一部完成操作<h3 id="每次都要输入add命令好麻烦？"><a href="#每次都要输入add命令好麻烦？" class="headerlink" title="每次都要输入add命令好麻烦？"></a>每次都要输入add命令好麻烦？</h3></li>
 </ul>
 </li>
-<li>git commit -a -m ‘描述’<br>  +从工作目录提交到暂存区后，再直接从暂存区提交到git仓库</li>
+<li>git commit -a -m ‘描述’<ul>
+<li>从工作目录提交到暂存区后，再直接从暂存区提交到git仓库</li>
+</ul>
+</li>
 </ul>
 <blockquote>
 <p> git commit -a -m ‘描述’无法操作未被追踪的文件。需要先git add 。添加到暂存区</p>
